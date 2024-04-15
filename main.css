@@ -1,0 +1,53 @@
+body * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(167, 230, 230);
+}
+
+aside {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    body {
+        background-color: rgb(43, 43, 43);
+        color: rgb(245, 245, 245);
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    header, footer {
+        flex-basis: 100%;
+    }
+    main {
+        flex-basis: 68%;
+    }
+    aside {
+        flex-basis: 30%;
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: rgb(20, 12, 56);
+        color: rgb(243, 243, 243);
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    main article {
+        flex-basis: 45%;
+    }
+}
